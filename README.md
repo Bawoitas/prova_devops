@@ -34,7 +34,7 @@
 
 #### O que cada elemento do docker-compose.yml faz
 
-**services**: Define os serviços que serão criados
+**services**: Define os serviços que serão criados\
 ´´
 **products**: Serviço do app de produtos
 ´´
