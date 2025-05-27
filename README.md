@@ -36,56 +36,56 @@
 
 **services**: Define os serviços que serão criados\
 ´´
-**products**: Serviço do app de produtos
+**products**: Serviço do app de produtos\
 ´´
-**build**: Usa o dockerfile da pasta products
+**build**: Usa o dockerfile da pasta products\
 ´´
-**ports**: Mapeia a porta 3001 do container para a máquina
+**ports**: Mapeia a porta 3001 do container para a máquina\
 ´´
-**networks**: Conecta a rede app-network
+**networks**: Conecta a rede app-network\
 ´´
-**orders**: Serviço do app de pedidos
+**orders**: Serviço do app de pedidos\
 ´´
-**build**: Usa o dockerfile da pasta orders
+**build**: Usa o dockerfile da pasta orders\
 ´´
-**ports**: Mapeia a porta 3002
+**ports**: Mapeia a porta 3002\
 ´´
-**depends_on**: Só inicia depois de products, db e redis
+**depends_on**: Só inicia depois de products, db e redis\
 ´´
-**environment**: Variáveis de ambiente para conexão com MySQL e Redis
+**environment**: Variáveis de ambiente para conexão com MySQL e Redis\
 ´´
-**networks**: Conecta a rede app-network
+**networks**: Conecta a rede app-network\
 ´´
-**payments**: Serviço do app de pagamentos
+**payments**: Serviço do app de pagamentos\
 ´´
-**build**: Usa o Dockerfile da pasta payments
+**build**: Usa o Dockerfile da pasta payments\
 ´´
-**ports**: Mapeia a porta 3003
+**ports**: Mapeia a porta 3003\
 ´´
-**depends_on**: Só inicia depois de orders
+**depends_on**: Só inicia depois de orders\
 ´´
-**networks**: Conecta a rede app-network
+**networks**: Conecta a rede app-network\
 ´´
-**db**: Serviço do banco de dados MySQL
+**db**: Serviço do banco de dados MySQL\
 ´´
-**image**: Usa a imagem oficial do MySQL
+**image**: Usa a imagem oficial do MySQL\
 ´´
-**environment**: Define senha e banco
+**environment**: Define senha e banco\
 ´´
-**ports**: Mapeia a porta 3307 da máquina para 3306 do container
+**ports**: Mapeia a porta 3307 da máquina para 3306 do container\
 ´´
-**volumes**: Persiste dados em db-data
+**volumes**: Persiste dados em db-data\
 ´´
-**networks**: Conecta a rede app-network
+**networks**: Conecta a rede app-network\
 ´´
-**redis**: Serviço do Redis
+**redis**: Serviço do Redis\
 ´´
-**image**: Usa a imagem oficial do Redis
+**image**: Usa a imagem oficial do Redis\
 ´´
-**ports**: Mapeia a porta 6379
+**ports**: Mapeia a porta 6379\
 ´´
-**networks**: Conecta a rede app-network
+**networks**: Conecta a rede app-network\
 ´´
-**volumes**: Define volumes persistentes
+**volumes**: Define volumes persistentes\
 ´´
-**networks**: Define a rede app-network para comunicação entre os serviços
+**networks**: Define a rede app-network para comunicação entre os serviços\
